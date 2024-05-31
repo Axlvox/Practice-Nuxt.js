@@ -1,7 +1,7 @@
 <template>
 <div>
     <h1>Header</h1>
-    <PhosphorIconAvocado :size="32" color="green" weight="fill" />
+    <PhosphorIconAxe :size="32" color="blue" weight="fill" />
 
 </div>
 </template>
