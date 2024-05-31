@@ -5,9 +5,11 @@ export default defineNuxtConfig({
     css: "/<rootDir>/assets/css"
   },
   app: {
-    baseURL: process.env.BASE_URL,
+    baseURL: process.env.BASE_URL
   },
-  css: ["@/assets/css/main.css"]
+  css: ["@/assets/css/main.css"],
+  modules: ["nuxt-phosphor-icons"],
+
 });
 
 //Initial Commit
