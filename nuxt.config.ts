@@ -3,7 +3,11 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   alias: {
     css: "/<rootDir>/assets/css"
-  }
-})
+  },
+  app: {
+    baseURL: process.env.BASE_URL,
+  },
+  css: ["@/assets/css/main.css"]
+});
 
 //Initial Commit
