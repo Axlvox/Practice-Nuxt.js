@@ -26,7 +26,8 @@
 import type { Video } from "@/interfaces/video";
 import { useVideoStore } from "~/stores/video";
 
-//const favoritos = useFavoritos();
+
+//const favortos = useFavoritos();
 
 const { adicionarFavorito } = useVideoStore();
 

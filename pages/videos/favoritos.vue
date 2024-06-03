@@ -25,6 +25,8 @@
 
 const videoStore = useVideoStore();
 const { favoritos } = storeToRefs(videoStore);
+
+
 </script>
 
 <style lang="scss" scoped>
