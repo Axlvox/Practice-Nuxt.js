@@ -11,7 +11,7 @@ const adicionarFavorito = (video: Video) => {
     const favoritosFiltrados = favoritos.value.some((v) => v.id === video.id);
     if (!favoritosFiltrados) {
     favoritos.value.push(video);
-    $toast.success("Vídeo Favoritado!");
+    $toast.success(`Vídeo Favoritado!`);
     }
 };
 

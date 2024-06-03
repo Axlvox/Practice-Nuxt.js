@@ -3,6 +3,7 @@
     <div>Videos</div>
 
 <NuxtLink to="/videos/favoritos">Favoritos</NuxtLink>
+<h1>{{ $t("titulo") }}</h1>
     <div class="videos">
         <div v-for="video in videos" :key="video.id">
             <h2>{{ video.descrição }}</h2>
