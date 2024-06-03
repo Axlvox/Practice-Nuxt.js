@@ -1,6 +1,8 @@
 <template>
+    <div>
     <h1>Componentes - Nuxt 3</h1>
-    <p> {{ diferencaEmDias }}</p>
+    <p> {{ diferencaEmDias }} dias atrás</p>
+    </div>
 </template>
 
 <script setup lang="ts">
