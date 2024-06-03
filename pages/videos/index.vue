@@ -6,7 +6,7 @@
     <div class="videos">
         <div v-for="video in videos" :key="video.id">
             <h2>{{ video.descrição }}</h2>
-            <p>{{ converteDataBrasil(video.data_postagem) }}</p>
+            <p v-data-horario="'dd/mm/yyyy'">{{ video.data_postagem }}</p>
             <iframe
             width="550"
             height="400"
