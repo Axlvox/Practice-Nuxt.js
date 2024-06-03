@@ -1,6 +1,8 @@
 import type { Video } from "~/interfaces/video";
 
-export const useVideoStore = defineStore("videos", () => {
+export const useVideoStore = defineStore("videos", 
+
+() => {
     const favoritos = ref<Video[]>([]);
     const { $toast } = useNuxtApp();
 
@@ -22,4 +24,8 @@ const deletarFavorito = (id: number) => {
 
 
 return { adicionarFavorito, deletarFavorito, favoritos}
-});
+},
+{
+    persist: true
+}
+);

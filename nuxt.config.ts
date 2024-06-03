@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     baseURL: process.env.BASE_URL
   },
   css: ["@/assets/css/main.css"],
-  modules: ["nuxt-phosphor-icons", "@pinia/nuxt"],
+  modules: ["nuxt-phosphor-icons", "@pinia/nuxt", "@pinia-plugin-persistedstate/nuxt"],
   pinia: {
     storesDirs: ['./stores/**']
   }
