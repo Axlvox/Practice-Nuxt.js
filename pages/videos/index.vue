@@ -1,14 +1,13 @@
 <template>
     <div>
-    <div>Videos</div>
 
-<NuxtLink to="/videos/favoritos">Favoritos</NuxtLink>
-<h1>{{ $t("titulo") }}</h1>
-    <div class="videos">
+<h1 class="text-4xl text-center font-bold">{{ $t("titulo") }}</h1>
+    <div class="grid grid-cols-2 lg:grid-cols-3 items-center justify-center gap-4"
+>
         <div v-for="video in videos" :key="video.id">
-            <h2>{{ video.descrição }}</h2>
+            <h2 class="font-semibold">{{ video.descrição }}</h2>
             <p v-data-horario="'dd/mm/yyyy'">{{ video.data_postagem }}</p>
-            <iframe
+            <iframe class="h-48 w-full"
             width="550"
             height="400"
             :src="video.url"
@@ -16,7 +15,8 @@
             frameborder="0"
         />
         <div>
-        <button @click="adicionarFavorito(video)">Adicionar Favorito</button>
+        <button @click="adicionarFavorito(video)"> Favoritar <PhosphorIconHeart :size="30" color="red" weight="fill" />
+</button>
         </div>
     </div>
 </div>

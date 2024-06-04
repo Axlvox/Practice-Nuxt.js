@@ -1,10 +1,12 @@
 <template>
+    <div class="text-4xl text-center font-bold">Vídeos Favoritos</div>
+    <div  class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+        <div>
     <div>
-    <div>Vídeos Favoritos</div>
-    <div class="videos">
         <div v-for="video in favoritos" :key="video.id">
-            <h2>{{ video.descrição }}</h2>
-            <iframe
+            <button @click="videoStore.deletarFavorito(video.id)" class="items-center">Remover <PhosphorIconTrash :size="30" color="gray" weight="fill" /></button>
+            <h2 class="font-semibold text-center">{{ video.descrição }}</h2>
+            <iframe class="h-48 w-full"
             width="550"
             height="400"
             :src="video.url"
@@ -13,9 +15,9 @@
         />
         <div>
         </div>
-        <button @click="videoStore.deletarFavorito(video.id)">Remover Favorito</button>
-        </div>
     </div>
+    </div>
+</div>
 </div>
 </template> 
 
